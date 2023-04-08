@@ -1,0 +1,52 @@
+.video-list {
+    margin-bottom: 30px;
+  }
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .item {
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .item:hover {
+    transform: scale(1.05);
+  }
+  .thumbnail {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    object-fit: cover;
+  }
+  .details {
+    padding: 10px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 14px;
+    line-height: 1.5;
+  }

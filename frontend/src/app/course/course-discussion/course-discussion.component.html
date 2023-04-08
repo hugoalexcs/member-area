@@ -1,0 +1,15 @@
+<div class="container">
+  <h2 class="mb-4">Discussions</h2>
+  <div *ngIf="discussions">
+    <div class="card mb-4" *ngFor="let discussion of discussions">
+      <div class="card-body">
+        <h5 class="card-title">{{ discussion.title }}</h5>
+        <p class="card-text">{{ discussion.description }}</p>
+        <a [routerLink]="['/courses', courseId, 'discussions', discussion.id]" class="btn btn-primary">View</a>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!discussions">
+    <p>Loading discussions...</p>
+  </div>
+</div>

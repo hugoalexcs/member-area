@@ -1,0 +1,12 @@
+<div class="video-list">
+    <div class="header">{{ title }}</div>
+    <div class="list">
+      <div class="item" *ngFor="let video of videos">
+        <img [src]="video.thumbnailUrl" class="thumbnail" alt="{{ video.title }}" />
+        <div class="details">
+          <div class="title">{{ video.title }}</div>
+          <div class="description">{{ video.description }}</div>
+        </div>
+      </div>
+    </div>
+  </div>

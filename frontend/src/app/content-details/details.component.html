@@ -1,0 +1,22 @@
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-8">
+        <video controls class="w-100">
+          <source [src]="content.videoUrl" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-md-4">
+        <h1>{{ content.title }}</h1>
+        <h4 class="mt-4">Descrição</h4>
+        <p>{{ content.description }}</p>
+        <h4 class="mt-4">Detalhes do Conteúdo</h4>
+        <ul>
+          <li><strong>Categoria:</strong> {{ content.category }}</li>
+          <li><strong>Duração:</strong> {{ content.duration }}</li>
+          <li><strong>Idioma:</strong> {{ content.language }}</li>
+          <li><strong>Classificação:</strong> {{ content.rating }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  

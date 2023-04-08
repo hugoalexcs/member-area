@@ -1,0 +1,17 @@
+<h1>Register</h1>
+<p>{{ errorMsg }}</p>
+<form (submit)="register()">
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" [(ngModel)]="username" required>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" [(ngModel)]="password" required>
+  </div>
+  <div>
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" [(ngModel)]="confirmPassword" required>
+  </div>
+  <button type="submit">Register</button>
+</form>

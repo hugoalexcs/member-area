@@ -1,0 +1,27 @@
+<div class="course-review-container">
+  <h3 class="section-title">Reviews</h3>
+  <div class="average-rating">
+    <h4>Average Rating:</h4>
+    <span>{{ getAverageRating() }}</span>
+    <i class="fas fa-star"></i>
+  </div>
+
+  <div *ngIf="!reviews || reviews.length === 0" class="no-reviews">
+    <p>No reviews yet. Be the first to write one!</p>
+  </div>
+
+  <div *ngFor="let review of reviews" class="review-item">
+    <div class="review-header">
+      <h4>{{ review.title }}</h4>
+      <div class="rating">
+        <span>{{ review.rating }}</span>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+    <p>{{ review.content }}</p>
+    <div class="review-footer">
+      <span>{{ review.author }}</span>
+      <span>{{ review.date | date }}</span>
+    </div>
+  </div>
+</div>
