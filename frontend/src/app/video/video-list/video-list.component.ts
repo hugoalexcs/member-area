@@ -7,8 +7,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./video-list.component.scss']
 })
 export class VideoListComponent implements OnInit {  
-  @Input() title: string;
-  @Input() videos: any[];
+  @Input() title: string | undefined;
+  @Input() videos: any[] | undefined;
 
   constructor(private http: HttpClient) { }
 

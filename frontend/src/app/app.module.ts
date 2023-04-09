@@ -2,10 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { VideoListComponent } from './video-list/video-list.component';
-import { VideoDetailComponent } from './video-detail/video-detail.component';
+
 import { HttpClientModule } from '@angular/common/http';
-import { HeaderComponent } from './header/header.component';
+import { VideoListComponent } from './video/video-list/video-list.component';
+import { VideoDetailComponent } from './video/video-detail/video-detail.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+
 
 
 @NgModule({
@@ -13,7 +17,9 @@ import { HeaderComponent } from './header/header.component';
     AppComponent,
     VideoListComponent,
     VideoDetailComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

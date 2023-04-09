@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-video-detail',
@@ -6,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./video-detail.component.css']
 })
 export class VideoDetailComponent {
-  videoId: string;
+  videoId: string | undefined;
   video: any;
 
   constructor(private route: ActivatedRoute, private http: HttpClient) { }
