@@ -1,0 +1,14 @@
+<h1>ngx-plyr demo</h1>
+<h3>
+  Angular 6+ bindings for plyr video and audio player.
+</h3>
+<!--
+<plyr style="display: block; width: 640px;" plyrTitle="Video 1" [plyrSources]="videoSources" (plyrInit)="player = $event"
+ (plyrPlay)="played($event)"></plyr>
+-->
+<div class="div5">
+    <plyr id="sheetVideo" plyrPoster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"
+      [plyrOptions]="optionsPlay" plyrTitle="Sheet Video" [plyrSources]="videoSources" (plyrInit)="player = $event"
+      (plyrPlay)="played($event)"
+      ></plyr>
+  </div>

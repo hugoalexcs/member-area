@@ -7,10 +7,14 @@ import { DetailFilmComponent } from './detail-film/detail-film.component';
 import { DetailSerieComponent } from './detail-serie/detail-serie.component';
 import { SearchComponent } from './search/search.component';
 import { LoginComponent } from './login/login.component';
+import { VideoComponent } from './video/video.component';
+import { VideoPlayerComponent } from './video-player/video-player.component';
 
 const routes: Routes = [
   {path:'', component:LoginComponent},
   {path:'home', component:HomeComponent},
+  {path:'video', component:VideoComponent},
+  {path:'video-player', component:VideoPlayerComponent},
   /*
   {path:'films', component:AfficheFilmComponent},
   {path:'series', component:AfficheSerieComponent},
